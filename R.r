@@ -21,9 +21,10 @@ View(Computer_Stats)
 # Creating a mode function
 getMode <- function(vector) {
   uniqv <- unique(vector)
-  uniqv[which.max(tabulate(match(vector, uniqv)))]
+  as.numeric(uniqv[which.max(tabulate(match(vector, uniqv)))])
 }
 
+#%%%%%%%%%%%%%%% < PART 1 > %%%%%%%%%%%%%%%
 # (A) Daily AC 2017
 mean(Daily_AC)
 median(Daily_AC)
@@ -54,5 +55,11 @@ pnorm(35.4, mean(Daily_PP), sd(Daily_PP))
 # (F) 
 pnorm(330, mean(Daily_PP), sd(Daily_PP))
 
+#%%%%%%%%%%%%%%% < END > %%%%%%%%%%%%%%%
 
+#%%%%%%%%%%%%%%% < PART 2 > %%%%%%%%%%%%%%%
+
+
+
+#%%%%%%%%%%%%%%% < END > %%%%%%%%%%%%%%%
 
