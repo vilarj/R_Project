@@ -47,19 +47,31 @@ boxplot(Daily_AC, main = "Daily AC", xlab = "M_AC <LEFT ---- RIGHT> Daily_AC", c
 boxplot(Daily_PP, main = "Daily PP", xlab = "M_AC <LEFT ---- RIGHT> Daily_AC", col = "gold", border = "brown")
 
 # (D) Normal Distribution of Daily AC
-pnorm(35.4, mean(Daily_AC), sd(Daily_AC))
+pnorm(36, mean(Daily_AC), sd(Daily_AC))
+pnorm(36, mean(Daily_PP), sd(Daily_PP))
 
 # (E) Normal Distribution of Daily PP
+pnorm(35.4, mean(Daily_AC), sd(Daily_AC))
 pnorm(35.4, mean(Daily_PP), sd(Daily_PP))
 
 # (F) 
+pnorm(330, mean(Daily_AC), sd(Daily_AC))
 pnorm(330, mean(Daily_PP), sd(Daily_PP))
 
 #%%%%%%%%%%%%%%% < END > %%%%%%%%%%%%%%%
 
 #%%%%%%%%%%%%%%% < PART 2 > %%%%%%%%%%%%%%%
+# (A) mean, standard deviation, proportion of AC
+mean(M_AC)
+mean(M_PP)
 
+sd(M_AC)
+sd(M_PP)
 
+# TODO: Need to do the proportion
+
+# (B) Scatterplot
+#plot(Computer_Stats, main = "Scatterplot", xlab = "AC", ylab = "PP", col = "red", pch=19)
 
 #%%%%%%%%%%%%%%% < END > %%%%%%%%%%%%%%%
 
